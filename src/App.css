@@ -1,0 +1,130 @@
+:root {
+  /* Primary Colors */
+  --primary-100: #E3F2F6;
+  --primary-200: #C7E5ED;
+  --primary-300: #96CEDE;
+  --primary-400: #65B7CF;
+  --primary-500: #3498DB;  /* Main Primary */
+  --primary-600: #2980B9;
+  --primary-700: #1F6A98;
+  --primary-800: #155477;
+  --primary-900: #0B3E56;
+
+  /* Neutral Colors */
+  --neutral-100: #FFFFFF;
+  --neutral-200: #F8F9FA;
+  --neutral-300: #E9ECEF;
+  --neutral-400: #DEE2E6;
+  --neutral-500: #ADB5BD;
+  --neutral-600: #6C757D;
+  --neutral-700: #495057;
+  --neutral-800: #343A40;
+  --neutral-900: #212529;
+
+  /* Accent Colors */
+  --accent-100: #FFF3E0;
+  --accent-500: #FF9800;
+  --accent-900: #E65100;
+
+  /* Semantic Colors */
+  --success: #2ECC71;
+  --warning: #F1C40F;
+  --error: #E74C3C;
+  --info: #3498DB;
+
+  /* Background Colors */
+  --bg-primary: var(--neutral-100);
+  --bg-secondary: var(--neutral-200);
+  --bg-dark: var(--neutral-900);
+  --bg-gradient: linear-gradient(135deg, var(--neutral-900) 0%, var(--neutral-800) 100%);
+  --bg-overlay: rgba(33, 37, 41, 0.7);
+
+  /* Text Colors */
+  --text-primary: var(--neutral-900);
+  --text-secondary: var(--neutral-700);
+  --text-tertiary: var(--neutral-600);
+  --text-light: var(--neutral-100);
+
+  /* Border Colors */
+  --border-light: var(--neutral-300);
+  --border-medium: var(--neutral-400);
+  --border-dark: var(--neutral-500);
+
+  /* Shadow Colors */
+  --shadow-sm: 0 2px 4px rgba(33, 37, 41, 0.1);
+  --shadow-md: 0 4px 8px rgba(33, 37, 41, 0.12);
+  --shadow-lg: 0 8px 16px rgba(33, 37, 41, 0.15);
+  --shadow-xl: 0 12px 24px rgba(33, 37, 41, 0.18);
+}
+
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Global styles */
+a {
+  color: var(--primary-500);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-600);
+}
+
+button {
+  font-family: inherit;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
